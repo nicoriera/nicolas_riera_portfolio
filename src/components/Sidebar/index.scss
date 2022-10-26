@@ -1,0 +1,21 @@
+.nav-bar{
+    background: #181818;
+    width: 6Opx;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+
+    .logo{
+        display: block;
+        padding: 8px 4px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+
+        .logo-initial{
+            font-size: large;
+        }
+
+
+}
