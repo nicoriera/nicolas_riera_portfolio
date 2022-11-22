@@ -28,7 +28,7 @@ const Sidebar = () => (
         className="contact-link"
         to="/contact"
       >
-        <FontAwesomeIcon icon="fa-brands fa-linkedin" color="#4d4d4e" />
+        <FontAwesomeIcon icon="fa-solid fa-envelope" color="#4d4d4e" />
       </NavLink>
     </nav>
     <ul>
@@ -43,7 +43,7 @@ const Sidebar = () => (
       </li>
       <li>
         <a href="https://github.com/nicoriera" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon="fa-solid fa-envelope" color="#4d4d4e" />
+          <FontAwesomeIcon icon="fa-brands fa-github" color="#4d4d4e" />
         </a>
       </li>
     </ul>
