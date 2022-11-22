@@ -2,10 +2,6 @@ $primary-color: #ffd700;
 
 @import  'animate.css';
 
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
-}
 
 @font-face {
   font-family: 'Coolvetica';
@@ -19,5 +15,5 @@ $primary-color: #ffd700;
 
 input,
 textarea {
-  font-family: "Helvetica Neue";
+  font-family: 'Lucida Grande';
 }
