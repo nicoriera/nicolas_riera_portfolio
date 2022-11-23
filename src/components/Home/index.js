@@ -8,7 +8,7 @@ const Home = () => {
         <h1>
           Hi, <br /> I'm Nicolas
           <br />
-          web developer
+          junior web developer
         </h1>
         <h2>Junior Developer Web / Javascript / React</h2>
         <Link to="/contact" className="flat-button">
