@@ -7,9 +7,30 @@ import Home from "./components/Home";
 import About from "./components/About";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedin,
+  faGithub,
+  faHtml5,
+  faCss3,
+  faReact,
+  faGit,
+  faSquareJs,
+  faNodeJs,
+} from "@fortawesome/free-brands-svg-icons";
 import { faHouse, faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-library.add(faHouse, faUser, faEnvelope, faLinkedin, faGithub);
+library.add(
+  faHouse,
+  faUser,
+  faEnvelope,
+  faLinkedin,
+  faGithub,
+  faHtml5,
+  faCss3,
+  faReact,
+  faGit,
+  faSquareJs,
+  faNodeJs
+);
 
 function App() {
   return (
