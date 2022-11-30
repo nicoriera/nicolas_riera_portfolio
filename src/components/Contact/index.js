@@ -3,12 +3,18 @@ import { Loader } from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import { useEffect, useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+// import {
+//   MapContainer,
+//   TileLayer,
+//   Marker,
+//   Popup,
+// } from "https://cdn.esm.sh/react-leaflet";
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const contactArray = ["C", "o", "n", "t", "a", "c", "t", " ", "m", "e"];
   const form = useRef();
-
+  const position = [51.505, -0.09];
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -20,11 +26,12 @@ const Contact = () => {
         "0pwW7FEU08FqSpC4D"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          alert("Message successfully sent!");
+          window.location.reload(false);
         },
-        (error) => {
-          console.log(error.text);
+        () => {
+          alert("Failed to send the message. please try again");
         }
       );
   };
@@ -88,6 +95,28 @@ const Contact = () => {
               </ul>
             </form>
           </div>
+        </div>
+        <div className="info-map">
+          Nicolas RIERA,
+          <br />
+          France,
+          <br />
+          30 Allée Haussmann
+          <br />
+          33300 BORDEAUX
+          <br />
+          <span>nrierapro@gmail.com</span>
+        </div>
+        <div className="map-wrap">
+          {/* <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={position}>
+              <Popup>Nicolas lives here.</Popup>
+            </Marker>
+          </MapContainer> */}
         </div>
       </div>
       <Loader type="pacman" />
