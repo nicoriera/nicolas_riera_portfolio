@@ -1,11 +1,33 @@
 import "./index.scss";
 import { Loader } from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const contactArray = ["C", "o", "n", "t", "a", "c", "t", " ", "m", "e"];
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_92ii8dg",
+        "template_ctbn6d9",
+        form.current,
+        "0pwW7FEU08FqSpC4D"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -32,7 +54,7 @@ const Contact = () => {
             or question, don't hesitate to contact me using below form either.
           </p>
           <div className="contact-form">
-            <form action="">
+            <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input type="text" name="name" placeholder="Name" required />
