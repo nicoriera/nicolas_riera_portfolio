@@ -3,18 +3,16 @@ import { Loader } from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import { useEffect, useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-// import {
-//   MapContainer,
-//   TileLayer,
-//   Marker,
-//   Popup,
-// } from "https://cdn.esm.sh/react-leaflet";
+import { MapContainer } from "react-leaflet/MapContainer";
+import { TileLayer } from "react-leaflet/TileLayer";
+import { Marker } from "react-leaflet/Marker";
+import { Popup } from "react-leaflet/Popup";
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const contactArray = ["C", "o", "n", "t", "a", "c", "t", " ", "m", "e"];
   const form = useRef();
-  const position = [51.505, -0.09];
+  const position = [44.8651735, -0.5698554, 17];
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -108,7 +106,7 @@ const Contact = () => {
           <span>nrierapro@gmail.com</span>
         </div>
         <div className="map-wrap">
-          {/* <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
+          <MapContainer center={position} zoom={30} scrollWheelZoom={false}>
             <TileLayer
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -116,7 +114,7 @@ const Contact = () => {
             <Marker position={position}>
               <Popup>Nicolas lives here.</Popup>
             </Marker>
-          </MapContainer> */}
+          </MapContainer>
         </div>
       </div>
       <Loader type="pacman" />
