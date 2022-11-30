@@ -107,6 +107,7 @@
     float: right;
     width: 40%;
     height: 100%;
+    border-radius: 20px;
 }
 
 .leaflet-container {
@@ -116,5 +117,5 @@
     opacity: 0;
     animation: backInRight 1s 1.2s;
     animation-fill-mode: forwards;
-
+    border-radius: 20px;
 }

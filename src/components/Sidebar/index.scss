@@ -1,6 +1,6 @@
 .nav-bar{
-    background: #181818;
-    width: 100px;
+    background: #18181820;
+    width: 70px;
     height: 100%;
     position: absolute;
     z-index: 3;
@@ -15,6 +15,8 @@
 
         .logo-initial{
             font-size: large;
+            letter-spacing: -8px;
+            font-size: 30px;
         }
     }
 
@@ -28,7 +30,7 @@
         width: 100%;
     
         a {
-            font-size: 22px;
+            font-size: 18px;
             color: #4d4d4e;
             display: block;
     
@@ -60,7 +62,7 @@
                 content: '';
                 font-size: 10px;
                 font-weight: bold;
-                letter-spacing: 2px;
+                letter-spacing: 1px;
                 position: absolute;
                 bottom: 0;
                 display: block;
