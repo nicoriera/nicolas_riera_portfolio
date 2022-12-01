@@ -62,7 +62,7 @@
                 content: '';
                 font-size: 10px;
                 font-weight: bold;
-                letter-spacing: 1px;
+                letter-spacing: 0.5px;
                 position: absolute;
                 bottom: 0;
                 display: block;
@@ -88,6 +88,12 @@
         a.contact-link{
             &::after{
                 content: "CONTACT";
+            }
+        }
+
+        a.portfolio-link{
+            &::after{
+                content: "PORTFOLIO";
             }
         }
     

@@ -6,6 +6,7 @@ import Layout from "./components/Layout";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Portfolio from "./components/Portfolio";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -18,7 +19,12 @@ import {
   faSquareJs,
   faNodeJs,
 } from "@fortawesome/free-brands-svg-icons";
-import { faHouse, faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHouse,
+  faUser,
+  faEnvelope,
+  faFolder,
+} from "@fortawesome/free-solid-svg-icons";
 library.add(
   faHouse,
   faUser,
@@ -30,7 +36,8 @@ library.add(
   faReact,
   faGit,
   faSquareJs,
-  faNodeJs
+  faNodeJs,
+  faFolder
 );
 
 function App() {
@@ -40,7 +47,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Route>
       </Routes>
     </>

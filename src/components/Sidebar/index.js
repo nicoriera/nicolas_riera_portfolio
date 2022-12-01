@@ -23,6 +23,14 @@ const Sidebar = () => (
       <NavLink
         exact="true"
         activeclassname="active"
+        className="portfolio-link"
+        to="/portfolio"
+      >
+        <FontAwesomeIcon icon="fa-solid fa-folder" color="#4d4d4e" />
+      </NavLink>
+      <NavLink
+        exact="true"
+        activeclassname="active"
         className="contact-link"
         to="/contact"
       >
