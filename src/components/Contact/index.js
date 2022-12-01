@@ -10,7 +10,7 @@ import { Popup } from "react-leaflet/Popup";
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
-  const contactArray = ["C", "o", "n", "t", "a", "c", "t", " ", "m", "e"];
+  const contactArray = "Contact me".split("");
   const form = useRef();
   const position = [44.8651735, -0.5698554, 17];
   const sendEmail = (e) => {

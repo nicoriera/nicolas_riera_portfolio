@@ -6,30 +6,8 @@ import { Loader } from "react-loaders";
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
-  const nameArray = [" ", "N", "i", "c", "o", "l", "a", "s"];
-  const jobArray = [
-    "j",
-    "u",
-    "n",
-    "i",
-    "o",
-    "r",
-    " ",
-    "w",
-    "e",
-    "b",
-    " ",
-    "d",
-    "e",
-    "v",
-    "e",
-    "l",
-    "o",
-    "p",
-    "e",
-    "r",
-    ".",
-  ];
+  const nameArray = " Nicolas".split("");
+  const jobArray = " junior web developer".split("");
 
   useEffect(() => {
     const timer = setTimeout(() => {
