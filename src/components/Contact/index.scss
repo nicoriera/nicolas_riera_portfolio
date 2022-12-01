@@ -67,11 +67,14 @@
         border: 1px solid #ffd700;
         border-radius: 4px;
         float: right;
+        margin-top: 5px;
+
 
         &:hover {
             color: #fff;
             background-color: #ffd700;
             font-weight: bold;
+            transform: translateY(-2px);
         }
     }
  
