@@ -10,7 +10,7 @@ const Sidebar = () => (
     </div>
     <nav>
       <NavLink exact="true" activeclassname="active" to="/">
-        <FontAwesomeIcon icon="fa-solid fa-house" color="#4d4d4e" />
+        <FontAwesomeIcon icon="fa-solid fa-house" color="#fff" />
       </NavLink>
       <NavLink
         exact="true"
@@ -18,7 +18,7 @@ const Sidebar = () => (
         className="about-link"
         to="/about"
       >
-        <FontAwesomeIcon icon="fa-solid fa-user" color="#4d4d4e" />
+        <FontAwesomeIcon icon="fa-solid fa-user" color="#fff" />
       </NavLink>
       <NavLink
         exact="true"
@@ -26,7 +26,7 @@ const Sidebar = () => (
         className="portfolio-link"
         to="/portfolio"
       >
-        <FontAwesomeIcon icon="fa-solid fa-folder" color="#4d4d4e" />
+        <FontAwesomeIcon icon="fa-solid fa-folder" color="#fff" />
       </NavLink>
       <NavLink
         exact="true"
@@ -34,7 +34,7 @@ const Sidebar = () => (
         className="contact-link"
         to="/contact"
       >
-        <FontAwesomeIcon icon="fa-solid fa-envelope" color="#4d4d4e" />
+        <FontAwesomeIcon icon="fa-solid fa-envelope" color="#fff" />
       </NavLink>
     </nav>
     <ul>
@@ -44,12 +44,12 @@ const Sidebar = () => (
           target="_blank"
           rel="noreferrer"
         >
-          <FontAwesomeIcon icon="fa-brands fa-linkedin" color="#4d4d4e" />
+          <FontAwesomeIcon icon="fa-brands fa-linkedin" color="#fff" />
         </a>
       </li>
       <li>
         <a href="https://github.com/nicoriera" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon="fa-brands fa-github" color="#4d4d4e" />
+          <FontAwesomeIcon icon="fa-brands fa-github" color="#fff" />
         </a>
       </li>
     </ul>
