@@ -19,7 +19,7 @@ const Portfolio = () => {
 
   const renderPortfolio = (portfolio) => {
     return (
-      <div className="image-container">
+      <div className="images-container">
         {portfolio.map((port, idx) => {
           return (
             <div className="image-box" key={idx}>
@@ -28,8 +28,17 @@ const Portfolio = () => {
                 className="portfolio-image"
                 alt="portfolio"
               />
-              <span>{port.title}</span>
-              <span>{port.description}</span>
+              <div className="content">
+                <p className="title">{port.title}</p>
+                <h4 className="description">{port.description}</h4>
+                <button
+                  button
+                  className="btn"
+                  onClick={() => window.open(port.url)}
+                >
+                  View
+                </button>
+              </div>
             </div>
           );
         })}
