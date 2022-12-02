@@ -3,8 +3,11 @@
     margin-top: 20px;
 
     ul {
-        padding: 0;
-        margin: 0;
+        padding: 20px;
+        // background-color: rgba(0, 0, 0, 0.386);
+        // border-radius: 10px;
+        // box-sizing: border-box;
+
 
         li {
             padding: 0;
@@ -35,19 +38,23 @@
     input[type="text"], input[type="email"]{
         width: 100%;
         border: 0;
-        background: #115173;
+        background: #5bc3fb;
         height: 50px;
         font-size: 16px;
         color: #fff;
         padding: 0 20px;
         box-sizing: border-box;
         border-radius: 5px;
+
+        &:hover {
+            border: solid 1px #fff;
+        }
     }
 
     textarea {
         width: 100%;
         border: 0;
-        background: #115173;
+        background: #5bc3fb;
         height: 50px;
         min-height: 150px;
         font-size: 16px;
@@ -55,6 +62,10 @@
         padding: 20px;
         box-sizing: border-box;
         border-radius: 5px;
+
+        &:hover {
+            border: solid 1px #fff;
+        }
     }
 
     .flat-button{
@@ -111,6 +122,7 @@
     width: 40%;
     height: 100%;
     border-radius: 20px;
+    padding: 20px;
 }
 
 .leaflet-container {
