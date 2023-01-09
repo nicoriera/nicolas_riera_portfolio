@@ -1,0 +1,34 @@
+.text-animate-initial {
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn 1s 1s;
+    animation-fill-mode:forwards;;
+    min-width: 10px;
+    color: white;
+    font-size: large;
+    letter-spacing: -8px;
+    font-size: 40px;
+}
+
+.text-animate-initial-hover {
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+    font-size: 30px;
+    font-size: large;
+    letter-spacing: -8px;
+    font-size: 40px;
+    color: white;
+
+    &:hover {
+        animation: rubberBand 1s;
+        color: #ffd700;
+    }
+}
+
+
+@for $i from 1 through 43 {
+    .text-animate._#{$i} {
+        animation-delay: #{$i / 15}s;
+    }
+}

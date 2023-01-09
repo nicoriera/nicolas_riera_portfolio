@@ -11,12 +11,23 @@
         color: white;
         font-weight: bold;
         text-align: center;
+        text-decoration: none;
     
 
         .logo-initial{
             font-size: large;
             letter-spacing: -8px;
             font-size: 30px;
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                color: #ffd700;
+            }
+        }
+
+        a {
+            text-decoration: none;
         }
     }
 
