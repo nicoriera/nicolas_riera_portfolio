@@ -1,17 +1,16 @@
 {
     "portfolio": [
         {
-            "cover":"/portfolio/1/one.png",
-            "title": "Cabinet Hypnose Hendaye",
+            "cover":"/portfolio/hypnose.png",
+            "title": "Cabinet Hypnose",
             "description": "React, Google Maps React, FontAwesome",
             "url": "http://cabinet-hypnose-hendaye.fr/"
         },
         {
-            "cover":"/portfolio/1/one.png",
-            "title": "Cabinet Hypnose Hendaye",
-            "description": "React, Google Maps React, FontAwesome",
-            "url": "http://cabinet-hypnose-hendaye.fr/"
-        }
-        
+            "cover":"/portfolio/vinted.png",
+            "title": "Vinted",
+            "description": "React, Node, BacKend, Frontend, FontAwesome",
+            "url": "https://nicolas-riera-vinted-training.netlify.app/"
+        }     
     ]
 }
